@@ -33,10 +33,20 @@ class AppRoutes {
         screen: const AnimatedScreen(),
         icon: Icons.animation_outlined),
     MenuOptions(
-        route: 'Input',
+        route: 'input',
         nameRoute: 'Input Screen',
         screen: const InputScreen(),
         icon: Icons.input_outlined),
+    MenuOptions(
+        route: 'slider',
+        nameRoute: 'Slider Screen',
+        screen: const SliderScreen(),
+        icon: Icons.slideshow_outlined),
+    MenuOptions(
+        route: 'listviewbuilder ',
+        nameRoute: 'Infinite Scroll & Pull to Refresh Screen',
+        screen: const ListviewBuilderScreen(),
+        icon: Icons.build_circle_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
